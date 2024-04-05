@@ -63,7 +63,7 @@ const turnRight = (arr, x, y) => {
 
 window.pirateGame = {
   start: startGame,
-  rederGrid,
+  renderGrid,
   pirateMap,
   moveForward,
   turnLeft,
