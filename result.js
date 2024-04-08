@@ -18,7 +18,7 @@ const turnRight = (arr, x, y) => {
   return [x + 1, y];
 };
 
-const gameStart = PIRATE_GAME.startGame(pirateMap);
+const gameStart = PIRATE_GAME.start(pirateMap);
 const step1 = PIRATE_GAME.turnLeft(pirateMap, ...gameStart);
 const step2 = PIRATE_GAME.turnLeft(pirateMap, ...step1);
 const step3 = PIRATE_GAME.turnLeft(pirateMap, ...step2);
