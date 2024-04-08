@@ -19,17 +19,17 @@ const turnRight = (arr, x, y) => {
 };
 
 const gameStart = PIRATE_GAME.start(pirateMap);
-const step1 = PIRATE_GAME.turnLeft(pirateMap, ...gameStart);
-const step2 = PIRATE_GAME.turnLeft(pirateMap, ...step1);
-const step3 = PIRATE_GAME.turnLeft(pirateMap, ...step2);
-const step4 = PIRATE_GAME.moveForward(pirateMap, ...step3);
-const step5 = PIRATE_GAME.moveForward(pirateMap, ...step4);
-const step6 = PIRATE_GAME.turnRight(pirateMap, ...step5);
-const step7 = PIRATE_GAME.moveForward(pirateMap, ...step6);
-const fourthStep = PIRATE_GAME.moveForward(pirateMap, ...step7);
-const fifthStep = PIRATE_GAME.turnLeft(pirateMap, ...fourthStep);
-const sixtStep = PIRATE_GAME.turnLeft(pirateMap, ...fifthStep);
-const seventhStep = PIRATE_GAME.moveForward(pirateMap, ...sixtStep);
-const eightStep = PIRATE_GAME.turnLeft(pirateMap, ...seventhStep);
+const step1 = turnLeft(pirateMap, ...gameStart);
+const step2 = turnLeft(pirateMap, ...step1);
+const step3 = turnLeft(pirateMap, ...step2);
+const step4 = moveForward(pirateMap, ...step3);
+const step5 = moveForward(pirateMap, ...step4);
+const step6 = turnRight(pirateMap, ...step5);
+const step7 = moveForward(pirateMap, ...step6);
+const fourthStep = moveForward(pirateMap, ...step7);
+const fifthStep = turnLeft(pirateMap, ...fourthStep);
+const sixtStep = turnLeft(pirateMap, ...fifthStep);
+const seventhStep = moveForward(pirateMap, ...sixtStep);
+const eightStep = turnLeft(pirateMap, ...seventhStep);
 
 PIRATE_GAME.renderGrid("grid");
